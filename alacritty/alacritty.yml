@@ -1,0 +1,112 @@
+import:
+  - ~/.config/alacritty/themes/catppuccin-mocha.yaml
+
+window:
+  dimensions: 
+    columns: 100 
+    lines: 25 
+  padding: 
+    x: 20 
+    y: 0 
+  # decorations: none 
+  dynamic_title: true 
+  startup_mode: Windowed # Maximized Fullscreen 
+  background_opacity: 0.92
+ 
+font:
+  normal:
+    family: Hack Nerd Font
+    style: Regular
+
+  # bold:
+  #   family: Droid Sans
+  #   style: Bold
+
+  # italic:
+  #   family: Droid Sans
+  #   style: Italic
+
+  # bold_italic:
+  #   family: Droid Sans
+  #   style: Bold Italic
+    
+  # Point size  
+  size: 16.0
+
+  # Offset is the extra space around each character. `offset.y` can be thought
+  # of as modifying the line spacing, and `offset.x` as modifying the letter
+  # spacing.
+  offset:
+    #  x: 2
+    y: 10
+
+  # Glyph offset determines the locations of the glyphs within their cells with
+  # the default being at the bottom. Increasing `x` moves the glyph to the
+  # right, increasing `y` moves the glyph upward.
+  glyph_offset:
+    x: 0
+    y: 0
+
+cursor:
+  style:
+    # Cursor shape
+    #
+    # Values for `shape`:
+    #   - ▇ Block
+    #   - _ Underline
+    #   - | Beam
+    shape: Beam
+
+env: 
+  TERM: xterm-256color
+  # decorations: none 
+  dynamic_title: true 
+  startup_mode: Windowed # Maximized Fullscreen 
+  background_opacity: 0.92
+ 
+font:
+  normal:
+    family: Hack Nerd Font
+    style: Regular
+
+  # bold:
+  #   family: Droid Sans
+  #   style: Bold
+
+  # italic:
+  #   family: Droid Sans
+  #   style: Italic
+
+  # bold_italic:
+  #   family: Droid Sans
+  #   style: Bold Italic
+    
+  # Point size  
+  size: 16.0
+
+  # Offset is the extra space around each character. `offset.y` can be thought
+  # of as modifying the line spacing, and `offset.x` as modifying the letter
+  # spacing.
+  offset:
+    #  x: 2
+    y: 10
+
+  # Glyph offset determines the locations of the glyphs within their cells with
+  # the default being at the bottom. Increasing `x` moves the glyph to the
+  # right, increasing `y` moves the glyph upward.
+  glyph_offset:
+    x: 0
+    y: 0
+
+cursor:
+  style:
+    # Cursor shape
+    #
+    # Values for `shape`:
+    #   - ▇ Block
+    #   - _ Underline
+    #   - | Beam
+    shape: Beam
+
+env: 
+  TERM: xterm-256color
