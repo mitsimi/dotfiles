@@ -1,6 +1,6 @@
 #!/bin/bash
 # Defining apps for installation
-binaries="alacritty base-devel flatpak neofetch neovim bat btop curl tealdeer zsh"
+binaries="alacritty base-devel flatpak neofetch neovim bat btop curl rsync tealdeer zsh"
 flatpaks="org.mozilla.firefox com.discordapp.Discord com.spotify.Client eu.betterbird.Betterbird net.cozic.joplin_desktop io.github.lunarequest.NightPDF"
 
 mkdir $HOME/Downloads
@@ -40,4 +40,4 @@ cd $HOME
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 
 # Copy configurations to home folder (should be last)
-cp -i -v -r .* $HOME
+rsync -a .config .local .zshenc .zshrc $HOME
