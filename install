@@ -1,6 +1,6 @@
 #!/bin/bash
 # Defining apps for installation
-binaries="alacritty base-devel flatpak firefox neofetch neovim bat btop curl rsync tealdeer zsh"
+binaries="alacritty base-devel flatpak firefox neofetch neovim bat btop curl zsh"
 flatpaks="com.discordapp.Discord com.spotify.Client eu.betterbird.Betterbird net.cozic.joplin_desktop io.github.lunarequest.NightPDF"
 
 # Installing apps per package manager
@@ -28,6 +28,7 @@ flatpak install flathub $flatpaks -y
    
 # Installing oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 # Installing rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
